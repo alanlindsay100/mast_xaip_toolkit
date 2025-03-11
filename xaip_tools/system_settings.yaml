@@ -1,0 +1,5 @@
+Settings:
+  System:
+    planner_path: /home/al/planners/optic/optic/release/optic/optic-clp
+    monitor_optic: true
+    timeout: 1800

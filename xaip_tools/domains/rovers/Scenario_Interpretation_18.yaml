@@ -1,0 +1,129 @@
+Areas: []
+Collections: []
+Points:
+- label: waypoint0
+  point:
+  - 433.0
+  - 1386.0
+  tags:
+  - location
+- label: waypoint1
+  point:
+  - 385.0
+  - 1314.0
+  tags:
+  - location
+- label: waypoint2
+  point:
+  - 861.0
+  - 450.0
+  tags:
+  - location
+- label: waypoint12
+  point:
+  - 1389.0
+  - 954.0
+  tags:
+  - location
+- label: waypoint13
+  point:
+  - 1109.0
+  - 306.0
+  tags:
+  - location
+- label: waypoint9
+  point:
+  - 1025.0
+  - 1098.0
+  tags:
+  - location
+- label: waypoint16
+  point:
+  - 1211.0
+  - 378.0
+  tags:
+  - location
+- label: waypoint18
+  point:
+  - 847.0
+  - 522.0
+  tags:
+  - location
+- label: waypoint17
+  point:
+  - 1007.0
+  - 810.0
+  tags:
+  - location
+- label: waypoint6
+  point:
+  - 1081.0
+  - 18.0
+  tags:
+  - location
+- label: waypoint11
+  point:
+  - 951.0
+  - 738.0
+  tags:
+  - location
+- label: waypoint15
+  point:
+  - 1007.0
+  - 162.0
+  tags:
+  - location
+- label: waypoint7
+  point:
+  - 593.0
+  - 1242.0
+  tags:
+  - location
+- label: waypoint14
+  point:
+  - 1585.0
+  - 90.0
+  tags:
+  - location
+- label: waypoint4
+  point:
+  - 1109.0
+  - 594.0
+  tags:
+  - location
+- label: waypoint5
+  point:
+  - 1773.0
+  - 666.0
+  tags:
+  - location
+- label: waypoint19
+  point:
+  - 1389.0
+  - 882.0
+  tags:
+  - location
+- label: waypoint8
+  point:
+  - 1345.0
+  - 1026.0
+  tags:
+  - location
+- label: waypoint3
+  point:
+  - 569.0
+  - 234.0
+  tags:
+  - location
+- label: waypoint10
+  point:
+  - 1178.0
+  - 1170.0
+  tags:
+  - location
+SpatialProperties:
+  near: 100.7
+  origin:
+  - 0.0
+  - 0.0
+  scale: 1.0

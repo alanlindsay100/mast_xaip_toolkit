@@ -1,0 +1,203 @@
+
+---
+action_template:
+  op:
+    operator_symbols: navigate
+    verb_alternatives: move, moving, moves, moved, to move, navigates, navigating, navigated, to navigate, navigate, went, to go, going, gone, go, goes, drive, driven, to drive, drove, driving, drives, drive the truck
+  description: move ?x from ?y to ?z
+  parameter1:
+    variable: ?x
+    type: rover
+    prepositions: 
+  parameter2:
+    variable: ?y
+    type: waypoint
+    prepositions: from, starting at, from the
+  parameter3:
+    variable: ?z
+    type: waypoint
+    prepositions: to, to the
+---
+# 
+action_template:
+  op:
+    operator_symbols: sample_soil
+    verb_alternatives: sample the soil, examine soil, soil
+  description: sample the rock at ?p with rover ?x into ?s
+  parameter1:
+    variable: ?x
+    type: rover
+    prepositions: with, use, of
+  parameter2:
+    variable: ?s
+    type: store
+    prepositions: in, to, into
+  parameter3:
+    variable: ?p
+    type: waypoint
+    prepositions: at, location
+---
+# 
+action_template:
+  op:
+    operator_symbols: sample_rock
+    verb_alternatives: sample the rock, examine the rock, rock
+  description: sample the rock at ?p with rover ?x into ?s
+  parameter1:
+    variable: ?x
+    type: rover
+    prepositions: with, use, of
+  parameter2:
+    variable: ?s
+    type: store
+    prepositions: in, to, into
+  parameter3:
+    variable: ?p
+    type: waypoint
+    prepositions: at, location
+---
+# 
+action_template:
+  op:
+    operator_symbols: drop
+    verb_alternatives: drop the sample, drop, empty
+  description: drop the sample in ?x from store ?y
+  parameter1:
+    variable: ?x
+    type: rover
+    prepositions: in, of
+  parameter2:
+    variable: ?y
+    type: store
+    prepositions: from, in
+---
+action_template:
+  op:
+    operator_symbols: calibrate
+    verb_alternatives: calibrate, setup
+  description: calibrate camera ?i on ?r at ?w for ?t
+  parameter1:
+    variable: ?r
+    type: rover
+    prepositions: on, of
+  parameter2:
+    variable: ?i
+    type: camera
+    prepositions: camera
+  parameter3:
+    variable: ?t
+    type: objective
+    prepositions: for, objective
+  parameter4:
+    variable: ?w
+    type: waypoint
+    prepositions: at, from
+---
+action_template:
+  op:
+    operator_symbols: take_image
+    verb_alternatives: take an image, take a photo, photo
+  description: take an image of ?o from ?p using camera ?i on ?r in mode ?m
+  parameter1:
+    variable: ?r
+    type: rover
+    prepositions: on, of
+  parameter2:
+    variable: ?p
+    type: waypoint
+    prepositions: at, from
+  parameter3:
+    variable: ?o
+    type: objective
+    prepositions: of
+  parameter4:
+    variable: ?i
+    type: camera
+    prepositions: using, camera
+  parameter5:
+    variable: ?m
+    type: mode
+    prepositions: mode
+---
+action_template:
+  op:
+    operator_symbols: communicate_soil_data
+    verb_alternatives: communicate soil data, send soil data
+  description: communicate soil data of ?p from ?r at ?x to ?l stationed at ?y
+  parameter1:
+    variable: ?r
+    type: rover
+    prepositions: from, rover, with
+  parameter2:
+    variable: ?l
+    type: lander
+    prepositions: to
+  parameter3:
+    variable: ?p
+    type: waypoint
+    prepositions: from, of
+  parameter4:
+    variable: ?x
+    type: waypoint
+    prepositions: from, at
+  parameter5:
+    variable: ?y
+    type: waypoint
+    prepositions: to, stationed at
+---
+action_template:
+  op:
+    operator_symbols: communicate_rock_data
+    verb_alternatives: communicate rock data, send rock data
+  description: communicate rock data of ?p from ?r at ?x to ?l stationed at ?y
+  parameter1:
+    variable: ?r
+    type: rover
+    prepositions: from, rover, with
+  parameter2:
+    variable: ?l
+    type: lander
+    prepositions: to
+  parameter3:
+    variable: ?p
+    type: waypoint
+    prepositions: from, of
+  parameter4:
+    variable: ?x
+    type: waypoint
+    prepositions: from, at
+  parameter5:
+    variable: ?y
+    type: waypoint
+    prepositions: to, stationed at
+---
+action_template:
+  op:
+    operator_symbols: communicate_image_data
+    verb_alternatives: communicate image data, send image data, send image
+  description: send image data of ?o in mode ?m with ?r at ?x to ?l stationed at ?y
+  parameter1:
+    variable: ?r
+    type: rover
+    prepositions: from, rover, with
+  parameter2:
+    variable: ?l
+    type: lander
+    prepositions: to
+  parameter3:
+    variable: ?o
+    type: objective
+    prepositions: of
+  parameter4:
+    variable: ?m
+    type: mode
+    prepositions: mode, in
+  parameter5:
+    variable: ?x
+    type: waypoint
+    prepositions: from, at
+  parameter6:
+    variable: ?y
+    type: waypoint
+    prepositions: to, stationed at
+    

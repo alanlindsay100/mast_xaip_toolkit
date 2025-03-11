@@ -1,0 +1,98 @@
+Interpretations:
+  Visualisation:
+    overlay: false
+    plan_rules:
+    - op: navigate
+      start_p: 1
+      end_p: 2
+      color: 0
+      label: 0
+      type: line
+    - op: sample_soil
+      start_p: 2
+      end_p: 2
+      color: 0
+      label: -1
+      type: line
+    - op: sample_rock
+      start_p: 2
+      end_p: 2
+      color: 0
+      label: -1
+      type: line
+    - op: calibrate
+      start_p: 3
+      end_p: 3
+      color: 0
+      label: -1
+      type: line
+    - op: take_image
+      start_p: 1
+      end_p: 1
+      color: 0
+      label: -1
+      type: line
+    - op: communicate_soil_data
+      start_p: 3
+      end_p: 4
+      color: 0
+      label: 2
+      type: dotted
+    - op: communicate_rock_data
+      start_p: 3
+      end_p: 4
+      color: 0
+      label: 2
+      type: dotted
+    - op: communicate_image_data
+      start_p: 4
+      end_p: 5
+      color: 0
+      label: 2
+      type: dotted            
+    structure_rules:
+    - tag: location
+      enable: true
+      label: true
+      annotate: True
+      color: darkorange
+    #- pred: visible
+    #  start_p: 0
+    #  end_p: 1
+    #  color: cyan
+    #  enable: initial
+    #  label: false
+  Spatial:
+    - located_type:
+        located_pred: at
+        pddl_type: waypoint
+        mover_p: 0
+        loc_p: 1
+      moving_action:
+        pddl_op: navigate
+        static: true
+        mover_p: 0
+        from_p: 1
+        to_p: 2
+      moving_type:
+        type: rover
+        located_pred: at
+        moving_actions: navigate
+  Resource: []
+  NL:
+    operator_templates: xaip_tools/domains/rovers/action_templates.yaml
+    function_templates: xaip_tools/domains/rovers/function_templates.yaml
+  Abstraction:
+    apply: true
+    decision_locations:
+      - scope: initial_state
+        rule: at_soil_sample 0
+      - scope: initial_state
+        rule: at_rock_sample 0
+      - scope: initial_state
+        rule: at_lander 1
+      - scope: initial_state
+        rule: at 1
+      #- scope: initial_state
+      #  rule: visible_from 1
+

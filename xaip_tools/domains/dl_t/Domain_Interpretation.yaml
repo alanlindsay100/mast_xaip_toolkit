@@ -1,0 +1,93 @@
+Interpretations:
+  Visualisation:
+    overlay: false
+    plan_rules:
+    - op: drivetruck
+      start_p: 1
+      end_p: 2
+      color: 0
+      label: 0
+      type: line
+    - op: loadtruck
+      start_p: 2
+      end_p: 2
+      color: 1
+      label: -1
+      type: line
+    - op: unloadtruck
+      start_p: 2
+      end_p: 2
+      color: 1
+      label: -1
+      type: line
+    - op: walk
+      start_p: 1
+      end_p: 2
+      color: 0
+      label: 0
+      type: dashed
+    - op: boardtruck
+      start_p: 2
+      end_p: 2
+      color: 0
+      label: -1
+      type: line
+    - op: disembarktruck
+      start_p: 2
+      end_p: 2
+      color: 0
+      label: -1
+      type: line      
+    structure_rules:
+    - tag: location
+      enable: True
+      label: True
+      annotate: True
+      color: darkorange
+  Spatial:
+    - located_type:
+        located_pred: at
+        pddl_type: location
+        mover_p: 0
+        loc_p: 1
+      moving_action:
+        pddl_op: drivetruck
+        static: true
+        mover_p: 0
+        from_p: 1
+        to_p: 2
+      moving_type:
+        type: truck
+        located_pred: at
+        moving_actions: drivetruck
+    - located_type:
+        located_pred: at
+        pddl_type: location
+        mover_p: 0
+        loc_p: 1
+      moving_action:
+        pddl_op: walk
+        static: true
+        mover_p: 0
+        from_p: 1
+        to_p: 2
+      moving_type:
+        type: driver
+        located_pred: at
+        moving_actions: walk
+  Resource:
+    - task_type:
+        label: unloadtruck
+        task_sequence:
+          - unloadtruck,ID0,MOVER,_
+  NL:
+    operator_templates: xaip_tools/domains/dl_t/action_templates.yaml
+    function_templates: xaip_tools/domains/dl_t/function_templates.yaml
+  Abstraction:
+    apply: true
+    decision_locations:
+      - scope: initial_state
+        rule: at 1
+      - scope: goal
+        rule: at 1
+

@@ -1,0 +1,99 @@
+Areas: []
+Collections: []
+Points:
+- label: s1
+  point:
+  - 598.65
+  - 655.84
+  tags:
+  - location
+- label: p1_0
+  point:
+  - 633.56
+  - 18.0
+  tags:
+  - location
+- label: s0
+  point:
+  - 877.86
+  - 352.49
+  tags:
+  - location
+- label: p1_4
+  point:
+  - 32.497
+  - 1260.6
+  tags:
+  - location
+- label: s4
+  point:
+  - 593.33
+  - 1272.5
+  tags:
+  - location
+- label: p1_5
+  point:
+  - 833.1
+  - 972.9
+  tags:
+  - location
+- label: s5
+  point:
+  - 1053.3
+  - 875.12
+  tags:
+  - location
+- label: s2
+  point:
+  - 1431.0
+  - 467.18
+  tags:
+  - location
+- label: p2_1
+  point:
+  - 379.61
+  - 452.59
+  tags:
+  - location
+- label: s3
+  point:
+  - 1135.3
+  - 701.41
+  tags:
+  - location
+- label: p3_1
+  point:
+  - 1252.5
+  - 833.18
+  tags:
+  - location
+- label: p3_0
+  point:
+  - 1033.8
+  - 473.8
+  tags:
+  - location
+- label: p4_5
+  point:
+  - 1086.6
+  - 1178.6
+  tags:
+  - location
+- label: p3_5
+  point:
+  - 1084.3
+  - 778.6
+  tags:
+  - location
+- label: p2_3
+  point:
+  - 1243.2
+  - 637.7
+  tags:
+  - location
+SpatialProperties:
+  near: 72.9
+  origin:
+  - 0.0
+  - 0.0
+  scale: 1.0

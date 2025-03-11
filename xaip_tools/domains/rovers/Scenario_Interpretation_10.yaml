@@ -1,0 +1,51 @@
+Areas: []
+Collections: []
+Points:
+- label: waypoint0
+  point:
+  - 369.0
+  - 450.0
+  tags:
+  - location
+- label: waypoint6
+  point:
+  - 217.0
+  - 378.0
+  tags:
+  - location
+- label: waypoint1
+  point:
+  - 227.0
+  - 90.0
+  tags:
+  - location
+- label: waypoint2
+  point:
+  - 189.0
+  - 18.0
+  tags:
+  - location
+- label: waypoint5
+  point:
+  - 265.0
+  - 162.0
+  tags:
+  - location
+- label: waypoint4
+  point:
+  - 217.0
+  - 306.0
+  tags:
+  - location
+- label: waypoint3
+  point:
+  - 217.0
+  - 234.0
+  tags:
+  - location
+SpatialProperties:
+  near: 24.5
+  origin:
+  - 0.0
+  - 0.0
+  scale: 1.0

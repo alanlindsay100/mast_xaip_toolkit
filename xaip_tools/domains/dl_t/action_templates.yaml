@@ -1,0 +1,121 @@
+
+---
+# move uav1 from A to B
+# navigate starting at A/ starting from A
+# go to B
+action_template:
+  op:
+    operator_symbols: drivetruck
+    verb_alternatives: move, moving, moves, moved, to move, navigates, navigating, navigated, to navigate, navigate, went, to go, going, gone, go, goes, drive, driven, to drive, drove, driving, drives, drive the truck
+  description: move ?truck from ?loc-from to ?loc-to using ?driver
+  parameter1:
+    variable: ?truck
+    type: truck
+    prepositions: 
+  parameter2:
+    variable: ?loc-from
+    type: location
+    prepositions: from, starting at, from the
+  parameter3:
+    variable: ?loc-to
+    type: location
+    prepositions: to, to the
+  parameter4:
+    variable: ?driver
+    type: driver
+    prepositions: with, using, driver, driven by    
+---
+# 
+action_template:
+  op:
+    operator_symbols: loadtruck
+    verb_alternatives: load, loaded, pickup, pick up, picked up, lift, lifted, get, got
+  description: load ?obj into ?truck at ?loc
+  parameter1:
+    variable: ?obj
+    type: obj
+    prepositions:
+  parameter2:
+    variable: ?truck
+    type: truck
+    prepositions: with, into
+  parameter3:
+    variable: ?loc
+    type: location
+    prepositions: at, location
+---
+action_template:
+  op:
+    operator_symbols: unloadtruck
+    verb_alternatives: unload, unloaded, drop, dropped, put down, deposit, deposited, left
+  description: unload ?obj from ?truck at ?loc
+  parameter1:
+    variable: ?obj
+    type: obj
+    prepositions:
+  parameter2:
+    variable: ?truck
+    type: truck
+    prepositions: with, from
+  parameter3:
+    variable: ?loc
+    type: location
+    prepositions: at, location, to
+---
+# 
+action_template:
+  op:
+    operator_symbols: boardtruck
+    verb_alternatives: get in, gets into, board
+  description: board ?driver into ?truck at ?loc
+  parameter1:
+    variable: ?driver
+    type: driver
+    prepositions:
+  parameter2:
+    variable: ?truck
+    type: truck
+    prepositions: to, into
+  parameter3:
+    variable: ?loc
+    type: location
+    prepositions: at, location
+---
+# 
+action_template:
+  op:
+    operator_symbols: disembarktruck
+    verb_alternatives: get in, gets out, disembark
+  description: disembark ?driver from ?truck at ?loc
+  parameter1:
+    variable: ?driver
+    type: driver
+    prepositions:
+  parameter2:
+    variable: ?truck
+    type: truck
+    prepositions: from, of
+  parameter3:
+    variable: ?loc
+    type: location
+    prepositions: at, location, to
+---
+action_template:
+  op:
+    operator_symbols: walk
+    verb_alternatives: move, walk, walks, moves, moved, to move, to go, going, gone, go, goes
+  description: walk ?driver from ?loc-from to ?loc-to
+  parameter1:
+    variable: ?driver
+    type: driver
+    prepositions: 
+  parameter2:
+    variable: ?loc-from
+    type: location
+    prepositions: from, starting at, from the
+  parameter3:
+    variable: ?loc-to
+    type: location
+    prepositions: to, to the
+
+    
